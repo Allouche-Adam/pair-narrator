@@ -72,7 +72,7 @@ How it works (in plain words):
 ## 🚀 Quick start
 
 ```
-/plugin marketplace add YOUR-GITHUB-NAME/pair-narrator
+/plugin marketplace add Allouche-Adam/pair-narrator
 /plugin install pair-narrator@pair-narrator
 ```
 

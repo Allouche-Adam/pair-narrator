@@ -1,12 +1,12 @@
 {
   "name": "pair-narrator",
-  "owner": { "name": "pair-narrator" },
+  "owner": { "name": "Allouche-Adam" },
   "description": "Plugins that help people learn while Claude builds.",
   "plugins": [
     {
       "name": "pair-narrator",
       "source": "./",
-      "description": "Claude talks you through what it's building and why, at vibe coder or engineer level."
+      "description": "Claude talks you through what it's building and why, from no-jargon to engineer level, with a recap at the end."
     }
   ]
 }
