@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+- README redesigned: badges, demo, features table, modes table, FAQ.
+- Added `examples/tip-calculator/` with real output from a teach-mode test run (code, step notes, recap).
+
 ## 0.3.0 (2026-11-16)
 - New `later` mode: quiet while working, notes kept, full explanation and recap at the end.
 - Plain-language switching: "stop explaining", "just code", "keep explaining" work without the command.

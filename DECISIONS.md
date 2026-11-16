@@ -1,5 +1,11 @@
 # Decisions
 
+## 2026-11-16: Demo with real output, not invented text
+- **Chosen:** the README demo uses real test-run output where possible, and labels the one written illustration. A full real example lives in `examples/tip-calculator/`.
+- **Why:** people trust a demo more when they can open the actual files it produced.
+- **Rejected:** a GIF/video for now (needs a screen recording; good to add later); fully invented demos (could oversell the plugin).
+- **Affects:** when the skill changes a lot, the example should be regenerated so it stays honest.
+
 ## 2026-11-16: Narrate live by default, `later` is opt-in
 - **Chosen:** live narration stays the default. `later` works quietly, keeps notes, and explains at the end. Plain phrases like "just code" switch modes too.
 - **Why:** live narration is the point of the plugin, but sometimes users just want the code first. Notes keep the end explanation accurate.
