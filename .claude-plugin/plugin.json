@@ -1,0 +1,6 @@
+{
+  "name": "pair-narrator",
+  "version": "0.3.0",
+  "description": "Makes Claude talk you through what it's building and why, like a teammate sitting next to you. Pick vibe coder or engineer level.",
+  "keywords": ["learning", "narration", "explain", "students"]
+}
