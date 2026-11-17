@@ -7,7 +7,7 @@
 Like a teammate sitting next to you, not a status log. **Out loud, if you want.**
 
 ![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-d97757)
-![Version](https://img.shields.io/badge/version-0.4.0-blue)
+![Version](https://img.shields.io/badge/version-0.4.1-blue)
 ![Made for learners](https://img.shields.io/badge/made%20for-learners-brightgreen)
 
 [Demo](#-demo) · [Quick start](#-quick-start) · [Modes](#-modes) · [Voice](#-voice) · [Example recap](examples/tip-calculator/RECAP.md) · [FAQ](#-faq)

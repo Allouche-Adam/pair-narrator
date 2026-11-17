@@ -1,6 +1,6 @@
 {
   "name": "pair-narrator",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "author": { "name": "Allouche-Adam", "url": "https://github.com/Allouche-Adam" },
   "repository": "https://github.com/Allouche-Adam/pair-narrator",
   "description": "Makes Claude talk you through what it's building and why, like a teammate sitting next to you. Pick your level: vibe, teach, or engineer, hear it out loud, and get a recap with a diagram.",

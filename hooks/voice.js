@@ -60,8 +60,10 @@ function onPrompt(input, session, state) {
   const prompt = String(input.prompt || "").trim();
   const lower = prompt.toLowerCase();
 
-  // "/narrate ..." or "/pair-narrator:narrate ..."
-  const cmd = lower.match(/^\/(?:pair-narrator:)?narrate\b(.*)$/s);
+  // "/narrate ..." or "/pair-narrator:narrate ...", typed as plain text or
+  // wrapped by Claude Code as <command-name>…</command-name><command-args>…
+  const wrapped = lower.match(/<command-name>\/?(?:pair-narrator:)?narrate<\/command-name>[\s\S]*?<command-args>([\s\S]*?)<\/command-args>/);
+  const cmd = wrapped || lower.match(/^\/(?:pair-narrator:)?narrate\b(.*)$/s);
   if (cmd) {
     const args = cmd[1].trim().split(/\s+/).filter(Boolean);
     const has = (w) => args.includes(w);
@@ -208,6 +210,10 @@ function speakNew(input, session) {
     if (e.type !== "assistant" || e.isSidechain) continue; // skip subagents
     for (const c of (e.message && e.message.content) || []) {
       if (c.type === "text" && c.text) texts.push(c.text);
+      // Newer models (e.g. Opus 5.5) store the short updates between steps as
+      // "thinking" blocks whose text is a summary shown on screen. Empty ones
+      // are hidden reasoning and are skipped.
+      else if (c.type === "thinking" && c.thinking) texts.push(c.thinking);
     }
   }
   state.lastUuid = lastUuid(entries) || state.lastUuid;

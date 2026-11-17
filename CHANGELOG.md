@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 (2026-11-17)
+- Fixed: in interactive sessions the narrate command reaches the hook wrapped in <command-name>/<command-args> tags, so `voice` never turned on. Both forms are recognised now.
+- Fixed: on newer models (Opus 5.5) the updates between steps are stored as thinking-block summaries, so only the final message was spoken. Those summaries are read aloud now; empty (hidden) reasoning is still skipped.
+
 ## 0.4.0 (2026-11-16)
 - **Natural voice by default:** turning voice on the first time downloads Kokoro, a local open-source AI voice (about 580 MB, once, into `~/.pair-narrator`). Default voice Heart; `voice <name>` picks one of 28 and remembers it. Sentences are generated while the previous one plays, and the model stays loaded for two minutes.
 - **Volume:** default 50%; `louder`, `quieter`, `volume N`, saved in `~/.pair-narrator/config.json`.
