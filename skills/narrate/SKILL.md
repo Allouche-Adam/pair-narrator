@@ -32,6 +32,8 @@ If only `voice` (or only a voice option) is given, use Vibe level unless a level
 
 Confirm in one short sentence what is now on (for example "Teach mode is on, and I'll talk out loud."), then continue with whatever the user asked. If they haven't asked for anything yet, ask what they'd like to work on.
 
+If narration starts without `voice`, end that confirmation with one line: "Want to hear me instead of reading? Add `voice`, like `/pair-narrator:narrate teach voice`." (use their level). Say it only this once.
+
 Keep these settings for the rest of the session until the user changes them. If you notice yourself drifting back to short status lines, return to the level.
 
 ### Switching with plain words

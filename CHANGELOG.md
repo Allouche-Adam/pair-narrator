@@ -1,6 +1,7 @@
 # Changelog
 
 ## 0.4.1 (2026-11-17)
+- When narration starts without voice, Claude mentions once how to turn voice on.
 - Fixed: in interactive sessions the narrate command reaches the hook wrapped in <command-name>/<command-args> tags, so `voice` never turned on. Both forms are recognised now.
 - Fixed: on newer models (Opus 5.5) the updates between steps are stored as thinking-block summaries, so only the final message was spoken. Those summaries are read aloud now; empty (hidden) reasoning is still skipped.
 
