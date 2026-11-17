@@ -6,7 +6,7 @@
     {
       "name": "pair-narrator",
       "source": "./",
-      "description": "Claude talks you through what it's building and why, from no-jargon to engineer level, with a recap at the end."
+      "description": "Claude talks you through what it's building and why, from no-jargon to engineer level, out loud if you want, with a recap at the end."
     }
   ]
 }
